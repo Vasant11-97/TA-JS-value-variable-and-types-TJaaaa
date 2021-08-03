@@ -3,13 +3,13 @@
 // Do the following using loops:
 
 // Using `console.log` log all the values from 1 to 10.
-for(let i = 0; i < 10; i = i + 1){
+for(let i = 1; i <= 10; i = i ++){
     console.log(i);
 }
 
 // Using `console.log` log all the evan values from 1 to 10.
 
-for(let i = 0; i < 11; i = i + 1){
+for(let i = 1; i <= 10; i = i++){
     if( i% 2 == 0){
         console.log(i);
     }
@@ -17,7 +17,7 @@ for(let i = 0; i < 11; i = i + 1){
 
 // Using `console.log` log all the od values from 1 to 10.
 
-for(let i = 0; i < 11; i = i + 1){
+for(let i = 0; i <= 10; i = i++){
     if( i% 2 !== 0){
         console.log(i);
     }
@@ -25,19 +25,18 @@ for(let i = 0; i < 11; i = i + 1){
 
 // Calculate the sum of all numbers from 1 to 10.
 
-let num=0, nums = ['1','2','3','4','5','6', '7', '8', '9', '10'];
-
-for(var i=0; i < nums.length; i++){            
-        num += parseInt(nums[i]);  
+let sum = 0;
+for(let i = 1; i <= 10; i++){
+    sum += i;
 }
-  console.log(num);
 
 // Log all the values from 1 to 10 using while loop
 
-let i = 0;
-while(i < 10){
-    i = i + 1;
-    console.log(i);
+let initialValue = 1;
+while(initialValue < 10){
+    console.log(initialValue);
+    i = initialValue++;
+    
 }
 
 
