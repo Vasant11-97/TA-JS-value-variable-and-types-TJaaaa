@@ -130,16 +130,23 @@ switch(true){
 
 let salary = prompt("Enter your salary : ");
 switch(true){
-  case salary <= 20000 :
-    alert("Tax is 10%");
+  case salary <= 20000: {
+    let taxedAmount = (salary * 10) / 100;
+    alert(`Your In hand salary is ${ salary - taxedAmount}`);
     break;
-  case salary <= 40000 :
-    alert("Tax is 20%");
+  }
+  case salary <= 40000: {
+    let taxedAmount = (salary * 20) / 100;
+    alert(`Your In hand salary is ${ salary - taxedAmount}`);
     break;
-  case salary > 50000 :
-    alert("Tax is 30%");
+  }
+  case salary > 50000: {
+    let taxedAmount = (salary * 30) / 100;
+    alert(`Your In hand salary is ${ salary - taxedAmount}`);
     break;
-  
+  }
+  default:
+    alert("Please enter a valid input.");
 }
 
 //  if..else vs switch
